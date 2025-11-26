@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hacked By APT28</title>
+  <meta name="description" content="Welcome to apt28 Join us for discussions on cybersecurity, tech, and hacking tips.">
+  <meta name="keywords" content="cybersecurity, hacking, technology, apt28, discord, tech discussions">
+  <meta name="author" content="apt28">
+  <link rel="icon" href="https://media.discordapp.net/attachments/1365926691423256647/1366956780915134536/IMG_8200.jpg" type="image/gif" />
+  <meta property="og:title" content="apt28" />
+  <meta property="og:description" content="Join apt28 for exclusive cybersecurity discussions and updates." />
+  <meta property="og:image" content="https://media.discordapp.net/attachments/1365926691423256647/1366056393815097425/APT28.png" />
+  <meta property="og:url" content="https://discord.gg/apt28" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    pre {
+      font-size: 1.1rem;
+      color: #0ff;
+      text-shadow: 0 0 8px #0ff;
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 1.4rem;
+      color: #ff0055;
+      text-shadow: 0 0 5px #ff0055;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      color: #00f0ff;
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-shadow: 0 0 5px #00f0ff;
+    }
+
+    #members, #greetz {
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid;
+      padding-right: 5px;
+      animation: blink 1s step-end infinite;
+    }
+
+    #members {
+      color: #00ffcc;
+      border-color: #00ffcc;
+    }
+
+    #greetz {
+      color: #8eb7f0;
+      border-color: #ff0077;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #bgvideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="bgvideo">
+    <source src="https://cdn.discordapp.com/attachments/1206567736696774679/1443177488292511885/lv_0_20250429170211.mp4?ex=69281f46&is=6926cdc6&hm=3f6be095bf7a20675d30616347b89590f5807709c528f99d6d68b18e896bff4c&" type="video/mp4">
+  </video>
+  
+  <a href="https://discord.gg/apt28" target="_blank">  <pre>
+    █████  ██████  ████████ ██████   █████  
+   ██   ██ ██   ██    ██         ██ ██   ██ 
+   ███████ ██████     ██     █████   █████  
+   ██   ██ ██         ██    ██      ██   ██ 
+   ██   ██ ██         ██    ███████  █████  
+
+     Your System Was Hacked. 
+ </pre>
+</a>
+
+  <h2>Member:</h2>
+  <div id="members"></div>
+
+  <h2>Greetz:</h2>
+  <div class="center"><div id="greetz"></div></div>
+
+  <script>
+ window.addEventListener("DOMContentLoaded", () => {
+    const audio = new Audio("https://audio.jukehost.co.uk/Dg55irPm02FweMSRaCYkDdYCJlXxULMg");
+    audio.loop = true;
+    audio.muted = true;
+    audio.play().then(() => {
+      setTimeout(() => {
+        audio.muted = false; 
+      }, 1000);
+    }).catch(err => {
+      console.warn("Autoplay failed:", err);
+    });
+  });
+    const memberText = "Kotaro, Mesha, Rainy, Uno, Womy, Xev, Micx, Syete, Renz, Hairylips, Trust, Kiyo";
+    const greetzText = "Philippines Hacking University, The Nexus Squad, Xsos group, Magdalo Cyber Army, DeathNotehacker, Anonph";
+   
+    const memberEl = document.getElementById("members");
+    const greetzEl = document.getElementById("greetz");
+
+    function typeLoop(text, el, delayBeforeRestart) {
+      let i = 0;
+      el.textContent = "";
+
+      function type() {
+        if (i < text.length) {
+          el.textContent += text.charAt(i);
+          i++;
+          setTimeout(type, 100);
+        } else {
+          setTimeout(() => typeLoop(text, el, delayBeforeRestart), delayBeforeRestart);
+        }
+      }
+
+      type();
+    }
+
+    typeLoop(memberText, memberEl, 3000);
+    typeLoop(greetzText, greetzEl, 5000);
+  </script>
+</body>
+</html>
